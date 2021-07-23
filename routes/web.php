@@ -17,5 +17,5 @@ use App\Http\Controllers\ProductosController;
 Route::get('/', [ProductosController::class, 'list']);
 Route::get('/producto/create', [ProductosController::class, 'create']);
 Route::get('/producto/edit/{id}', [ProductosController::class, 'edit']);
-Route::get('/producto/remove/{id}', [ProductosController::class, 'remove']);
+Route::post('/producto/remove', [ProductosController::class, 'remove']);
 Route::post('/producto/save', [ProductosController::class, 'save']);
